@@ -1,25 +1,93 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
 
-        <title>Annie Liu's HCDE 439 Physical Computing Page!</title>
+    <title>Blink!</title>
 
-        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css"/>
 
-    </head> 
-    <body> 
+</head>
+<body bgcolor="#778899">
+<table width="100%" border="0">
+    <tr height="10%">
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <td width="20%"></td>
+        <td width="60%">
+            <div class="header" style="font-family: 'helvetica'">
+                <h1>Assignment 1: Blink!</h1>
+                <p>
+                    <img src="A1-Blink/blink_img1.jpg" width="100%"></a>
+                </p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    The Goal
+                </span>
+                <p></p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    My goal is to blink 5 LEDs, one after the other. Each LED will independently blink on for 100
+                    milliseconds and then off for 100 milliseconds, before the next LED blinks. I'll arrange my
+                    LEDs in a row on my breadboard and program the LEDs to blink in a back-and-forth pattern.
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    The Schematic
+                </span>
+                <p>
+                    <img src="A1-Blink/Blink_Schematic_WithNote.png" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    In my schematic, I have 5 differently colored LEDs connected to pins 9 through 13 on the Arduino.
+                    Using Ohm's Law, V=IR, I calculated the resistance needed so that 20 mA of current would flow
+                    through
+                    each LED. Since white and blue LEDs cause a greater voltage drop than red, yellow, and green LEDs, I
+                    calculated these resistor values separately. I found that the white and blue LEDs would need a 85
+                    ohm resistor, and the red, yellow, and green LEDs would need a 160 ohm resistor. Since I don't have
+                    resistors of these values, I replaced the 85 ohm resistors with 100 ohm resistors and the 160 ohm
+                    resistors with 220 ohm resistors in my circuit.
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    The Circuit
+                </span>
+                <p>
+                    <img src="A1-Blink/blink_img2.jpg" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    Here's what the circuit looks like on the Arduino and breadboard!
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    The Code
+                </span>
+                <iframe src=https://create.arduino.cc/editor/annielili/9ba6dda1-7bf2-48ff-b9c0-4246e9af112f/preview?embed
+                        style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    Access the code above! In the comments, I explain how to achieve the back-and-forth blinking pattern
+                    between the lights.
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    See It In Action!
+                </span>
+                <p>
+                    <img src="A1-Blink/blink_gif.gif" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    Blink! Blink! Blink! Blink! Blink!
+                </span>
+                <p></p>
+            </div>
+        </td>
+        <td width="20%"></td>
+    </tr>
+    <tr height="10%">
+        <td colspan="3"></td>
+    </tr>
+</table>
 
-        <div class="header">
-            <h1>Annie Liu's Assignment 1!</h1>
-            <p>
-            <img src="blink_img1.jpg" width=400></a>
-            </p>
-            <p>
-            Here is all the documentation for assignment 1!
-            </p>
-        </div>
-        
-    </body>
+
+</body>
 </html>
