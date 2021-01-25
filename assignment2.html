@@ -1,25 +1,104 @@
-<!DOCTYPE html> 
-<html> 
-    <head> 
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
 
-        <title>Example Student's HCDE 439 Physical Computing Page!</title> 
+    <title>Fade!</title>
 
-        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css"/>
 
-    </head> 
-    <body> 
+</head>
+<body bgcolor="#778899">
+<table width="100%" border="0">
+    <tr height="10%">
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <td width="20%"></td>
+        <td width="60%">
+            <div class="header" style="font-family: 'helvetica'">
+                <a href="index.html"><h2 style="color: lightslategrey">Back to Home Page</h2></a>
+                <h1>Assignment 2: Fade!</h1>
+                <p>
+                    <img src="A2-Fade/Fade_img1.jpg" width="100%"></a>
+                </p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    The Goal
+                </span>
+                <p></p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    My goal is to program an interaction with a button. When the button is not pressed, the white LED's
+                    brightness will fade in and out. When the button is pressed, an RGB LED will cycle through 5 colors
+                    continuously until the button is no longer pressed.
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    The Schematic
+                </span>
+                <p>
+                    <img src="A2-Fade/Fade_Schematic.png" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    In my schematic, I have a button and 2 LEDs (white and RGB) connected to pins on the Arduino.
+                    I use resistors to control the current.
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    Calculations
+                </span>
+                <p>
+                    <img src="A2-Fade/Fade_ButtonCalc.png" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    Determining resistance and current for the button circuit.
+                </span>
+                <p>
+                    <img src="A2-Fade/Fade_LEDCalc.png" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    Using Ohm's Law, I calculated the resistance needed so that 20 mA of current would flow through
+                    each LED. This is so that the LED can shine at its brightest.
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    The Circuit
+                </span>
+                <p>
+                    <img src="A2-Fade/Fade_img2.jpg" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    Here's what the circuit looks like on the Arduino and breadboard!
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    The Code
+                </span>
+                <iframe src=https://create.arduino.cc/editor/annielili/12c4ccb8-1242-493b-a792-726124f937f6/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    Access the code above! Looking back, if I were to improve my code, I would utilize breaks in the loop function,
+                    specifically in the for loops I use to fade the white LED, to make button pressing more responsive.
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    See It In Action!
+                </span>
+                <p>
+                    <img src="A2-Fade/fade.gif" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    Fading White LED and Flashing RGB LED
+                </span>
+                <p></p>
+            </div>
+        </td>
+        <td width="20%"></td>
+    </tr>
+    <tr height="10%">
+        <td colspan="3"></td>
+    </tr>
+</table>
 
-        <div class="header">
-            <h1>Example Student's Assignment 2!</h1>
-            <p>
-            <img src="red-panda.jpg" width=400></a>
-            </p>
-            <p>
-            Here is all the documentation for assignment 2!
-            </p>
-        </div>
-        
-    </body>
+
+</body>
 </html>
