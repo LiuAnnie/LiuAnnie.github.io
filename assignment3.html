@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
+
+    <title>Fade!</title>
+
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css"/>
+
+</head>
+<body bgcolor="#778899">
+<table width="100%" border="0">
+    <tr height="10%">
+        <td colspan="3"></td>
+    </tr>
+    <tr>
+        <td width="20%"></td>
+        <td width="60%">
+            <div class="header" style="font-family: 'helvetica'">
+                <a href="index.html"><h2 style="color: lightslategrey">Back to Home Page</h2></a>
+                <h1>Assignment 3: Input Output!</h1>
+                <p>
+                    <img src="A3-InputOutput/in_out_img1.jpg" width="100%"></a>
+                </p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    The Goal
+                </span>
+                <p></p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    My goal is to program an interaction with a photoresistor. The light levels of the surrounding
+                    environment is mapped to the brightness of the white LED. The green, yellow, and red LEDs
+                    state whether the physical environment is bright, dim, or dark, respectively.
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    The Schematic
+                </span>
+                <p>
+                    <img src="A3-InputOutput/in_out_schematic.png" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    In my schematic, I have a photoresistor and 4 LEDs on the breadboard. I use resistors
+                    to create a voltage divider and control the current.
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    Calculations
+                </span>
+                <p>
+                    <img src="A3-InputOutput/in_out_calc_voltagedivider.png" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    Determining resistance in the voltage divider circuit.
+                </span>
+                <p>
+                    <img src="A3-InputOutput/in_out_calc_led.png" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    Using Ohm's Law, I calculated the resistance needed so that 20 mA of current would flow through
+                    each LED. This is so that the LED can shine at its brightest.
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    The Circuit
+                </span>
+                <p>
+                    <img src="A3-InputOutput/in_out_img2.jpg" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    Here's what the circuit looks like on the Arduino and breadboard!
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    The Code
+                </span>
+                <iframe src=https://create.arduino.cc/editor/annielili/56eb975e-ed2f-43fe-b8d9-19e14a165f50/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    Access the code above!
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    Serial Monitor Capture
+                </span>
+                <p>
+                    <img src="A3-InputOutput/SerialMonitor_Snap.JPG" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    A snapshot of the serial monitor while running.
+                </span>
+                <p></p>
+                <span style="font-size: 25pt; font-weight: bold">
+                    See It In Action!
+                </span>
+                <p>
+                    <img src="A3-InputOutput/inputOutput.gif" width="100%"></a>
+                </p>
+                <span style="font-size: 14pt; line-height: 1.4">
+                    Mapping the changing resistance of the photoresistor to the brightness of the white LED.
+                    See how the red, yellow, and green LEDs display the state of the physical environment.
+                </span>
+                <p></p>
+            </div>
+        </td>
+        <td width="20%"></td>
+    </tr>
+    <tr height="10%">
+        <td colspan="3"></td>
+    </tr>
+</table>
+
+
+</body>
+</html>
