@@ -2,32 +2,38 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, maximum-scale=1.0"/>
-
-    <title>Libraries!</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" media="screen" rel="stylesheet" type="text/css"/>
-
+    <title>HCDE 439 Physical Computing</title>
 </head>
-<body bgcolor="#778899">
-<table width="100%" border="0">
-    <tr height="10%">
-        <td colspan="3"></td>
-    </tr>
-    <tr>
-        <td width="20%"></td>
-        <td width="60%">
-            <div class="header" style="font-family: 'helvetica'">
-                <a href="index.html"><h2 style="color: lightslategrey">Back to Home Page</h2></a>
-                <h1>Assignment 4: Libraries!</h1>
-                <p>
-                    <img src="A4-Libraries/lib_img1.jpg" width="100%"></a>
-                </p>
-                <span style="font-size: 25pt; font-weight: bold">
+<body>
+
+<div class="sidebar" style="width: 240px">
+    <b>Annie Liu</b>
+    <c>Physical Computing</c>
+    <a class="active" href="index.html">projects</a>
+    <a href="about.html">about</a>
+</div>
+
+<div class="content">
+    <table width="100%" border="0">
+        <tr height="10%">
+            <td colspan="3"></td>
+        </tr>
+        <tr>
+            <td width="20%"></td>
+            <td width="60%">
+                <div class="header">
+                    <h1>Assignment 4: Libraries!</h1>
+                    <p>
+                        <a target="_blank" href="A4-Libraries/lib_img1.jpg"><img src="A4-Libraries/lib_img1.jpg"
+                                                                                 width="100%"></a>
+                    </p>
+                    <span style="font-size: 25pt; font-weight: bold">
                     The Goal
                 </span>
-                <p></p>
-                <span style="font-size: 14pt; line-height: 1.4">
+                    <p></p>
+                    <span style="font-size: 14pt; line-height: 1.4">
                     My goal is to program an interaction with a capacitive sensor using a metal spoon and a remote.
                     Interactions with the spoon and remote affect the position of the servo. When the spoon is touched,
                     the servo will go to position 0. When the spoon is no longer being touched, the servo will go to
@@ -35,76 +41,113 @@
                     will stay there until the spoon is touched. The blue LED is on if and only if the servo position is 0,
                     and the white LED is on if and only if the servo position is 180.
                 </span>
-                <p></p>
-                <span style="font-size: 25pt; font-weight: bold">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <span style="font-size: 25pt; font-weight: bold">
                     The Schematic
                 </span>
-                <p>
-                    <img src="A4-Libraries/lib_schematic.png" width="100%"></a>
-                </p>
-                <span style="font-size: 14pt; line-height: 1.4">
+                    <p>
+                        <a target="_blank" href="A4-Libraries/lib_schematic.png"><img
+                                src="A4-Libraries/lib_schematic.png" width="100%"></a>
+                    </p>
+                    <span style="font-size: 14pt; line-height: 1.4">
                     In my schematic, I have a 2 LEDs, one white and one blue, an IR receiver with a remote, a capacitive
                     sensor with a metal spoon, and a servo. I use resistors to control current through the LEDs. I used
                     a 1 Megaohm resistor for my capacitive sensor.
                 </span>
-                <p></p>
-                <span style="font-size: 25pt; font-weight: bold">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <span style="font-size: 25pt; font-weight: bold">
                     Calculations
                 </span>
-                <p>
-                    <img src="A4-Libraries/lib_calc.png" width="100%"></a>
-                </p>
-                <span style="font-size: 14pt; line-height: 1.4">
+                    <p>
+                        <a target="_blank" href="A4-Libraries/lib_calc.png"><img src="A4-Libraries/lib_calc.png"
+                                                                                 width="100%"></a>
+                    </p>
+                    <span style="font-size: 14pt; line-height: 1.4">
                     Determining resistance in my circuit.
                 </span>
-                <p></p>
-                <span style="font-size: 25pt; font-weight: bold">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <span style="font-size: 25pt; font-weight: bold">
                     The Circuit
                 </span>
-                <p>
-                    <img src="A4-Libraries/lib_img3.jpg" width="100%"></a>
-                </p>
-                <p>
-                    <img src="A4-Libraries/lib_img2.jpg" width="100%"></a>
-                </p>
-                <span style="font-size: 14pt; line-height: 1.4">
+                    <p>
+                        <a target="_blank" href="A4-Libraries/lib_img3.jpg"><img src="A4-Libraries/lib_img3.jpg"
+                                                                                 width="100%"></a>
+                    </p>
+                    <p>
+                        <a target="_blank" href="A4-Libraries/lib_img2.jpg"><img src="A4-Libraries/lib_img2.jpg"
+                                                                                 width="100%"></a>
+                    </p>
+                    <span style="font-size: 14pt; line-height: 1.4">
                     Here's what the circuit looks like on the Arduino and breadboard!
                 </span>
-                <p></p>
-                <span style="font-size: 25pt; font-weight: bold">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <span style="font-size: 25pt; font-weight: bold">
                     The Code
                 </span>
-                <iframe src=https://create.arduino.cc/editor/annielili/61b5a0b5-c79e-4544-a08f-b5b27d5d2d51/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
-                <span style="font-size: 14pt; line-height: 1.4">
+                    <iframe src=https://create.arduino.cc/editor/annielili/61b5a0b5-c79e-4544-a08f-b5b27d5d2d51/preview?embed
+                            style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+                    <span style="font-size: 14pt; line-height: 1.4">
                     Access the code above!
                 </span>
-                <p></p>
-                <span style="font-size: 25pt; font-weight: bold">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <span style="font-size: 25pt; font-weight: bold">
                     Serial Monitor Capture
                 </span>
-                <p>
-                    <img src="A4-Libraries/A4_serial_monitor.JPG" width="100%"></a>
-                </p>
-                <span style="font-size: 14pt; line-height: 1.4">
+                    <p>
+                        <a target="_blank" href="A4-Libraries/A4_serial_monitor.JPG"><img
+                                src="A4-Libraries/A4_serial_monitor.JPG" width="100%"></a>
+                    </p>
+                    <span style="font-size: 14pt; line-height: 1.4">
                     A snapshot of the serial monitor while running.
                 </span>
-                <p></p>
-                <span style="font-size: 25pt; font-weight: bold">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <span style="font-size: 25pt; font-weight: bold">
                     See It In Action!
                 </span>
-                <p>
-                    <img src="A4-Libraries/library_gif.gif" width="100%"></a>
-                </p>
-                <span style="font-size: 14pt; line-height: 1.4">
+                    <p>
+                        <a target="_blank" href="A4-Libraries/library_gif.gif"><img src="A4-Libraries/library_gif.gif"
+                                                                                    width="100%"></a>
+                    </p>
+                    <span style="font-size: 14pt; line-height: 1.4">
                     Pressing any button on the remote sends the servo to position 180 and turns on the white light.
                     Touching the metal spoon sends the servo to position 0 and turns on the blue light.
                 </span>
-                <p></p>
-            </div>
-        </td>
-        <td width="20%"></td>
-    </tr>
-    <tr height="10%">
-        <td colspan="3"></td>
-    </tr>
-</table>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </td>
+            <td width="20%"></td>
+        </tr>
+        <tr height="10%">
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+    </body>
+</html>

@@ -1,71 +1,188 @@
 
-html, body {
-  padding: 0 0 0 0;
-  margin: 0;
-  font-family: 'helvetica', 'arial', 'sans';
+/*html, body {*/
+/*  padding: 0 0 0 0;*/
+/*  margin: 0;*/
+/*  font-family: 'helvetica', 'arial', 'sans';*/
+/*}*/
+
+/*h1,h2,h3,h4 {*/
+/*  font-family: 'helvetica', 'arial', 'sans';*/
+/*  }*/
+
+
+/*a {*/
+/*  color: #000;*/
+/*}*/
+
+/*.header {*/
+/*  background: #fff;*/
+/*  color: #000;*/
+/*  height: auto;*/
+/*  padding: 30px 30px 30px;*/
+/*}*/
+
+/*.header h1 {*/
+/*  font-size: 50px;*/
+/*  }*/
+
+/*.assignment {*/
+/*  font-size: 12px;*/
+/*  line-height: 24px;*/
+/*  font-family: 'helvetica', 'arial', 'sans';*/
+/*  padding: 20px 20px 20px 30px;*/
+/*  width: 250px;*/
+/*  height: 350px;*/
+/*  overflow: hidden;*/
+/*  float: left;*/
+/*}*/
+
+/*.assignment:hover { overflow:auto }*/
+
+/*.assignment a {*/
+/*    color: #000;*/
+/*    text-decoration: none;*/
+/*}*/
+
+/*.assignment a:hover {*/
+/*  background: #7F00FF;*/
+/*  color: #7F00FF;*/
+/*  text-decoration: none;*/
+/*}*/
+
+/*.footer {*/
+/*    width: 1100px;*/
+/*    float: left;*/
+/*    padding: 300px 0px 30px 30px;*/
+/*}*/
+
+/*.widebody {*/
+/*    width: 800px;*/
+/*    padding: 0px 30px 30px 30px;*/
+/*}*/
+
+/*.widebody a {*/
+/*}*/
+
+/*.widebody a:hover {*/
+/*  background: #F06;*/
+/*  color: #FFF;*/
+/*  text-decoration: none;*/
+/*}*/
+
+body {
+            margin: 0;
+            font-family: "Arboria";
+        }
+
+        .sidebar {
+            margin: 0;
+            margin-top: 0px;
+            padding: 0;
+            width: 200px;
+            background-color: #FFFFFF;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+
+        .sidebar a {
+            display: block;
+            margin-left: 40px;
+            font-size: 18px;
+            font-weight: 450;
+            color: black;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .sidebar a.active {
+            color: deeppink;
+        }
+
+        .sidebar b {
+            display: block;
+            margin-top: 15px;
+            margin-left: 40px;
+            font-size: 35px;
+            color: black;
+            font: "Arboria";
+        }
+
+        .sidebar c {
+            display: block;
+            font-size: 17px;
+            margin-left: 40px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .sidebar a:hover:not(.active) {
+            color: #adb5bd;
+        }
+
+        .assignment {
+            font-size: 16px;
+            font-family: 'Arboria';
+            padding: 0px 20px 0px 20px;
+            width: 490px;
+            height: 450px;
+            overflow: hidden;
+            float: left;
+        }
+
+        .assignment:hover {
+            overflow: auto
+        }
+
+        .assignment a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .assignment a:hover {
+            background: deeppink;
+            color: deeppink;
+            text-decoration: none;
+            /*border: 100px 100px 100px 100px solid deeppink;*/
+        }
+
+        div.content {
+            margin-top: 40px;
+            margin-left: 250px;
+            margin-right: 150px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+
+            .sidebar a {
+                float: left;
+            }
+
+            div.content {
+                margin-left: 0;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: black;
 }
 
-h1,h2,h3,h4 {
-  font-family: 'helvetica', 'arial', 'sans';
-  }
-
-
-a {
-  color: #000;
+p {
+    font-size: 18px;
+    line-height: 26px;
 }
-
-.header {
-  background: #fff;
-  color: #000;
-  height: auto;
-  padding: 30px 30px 30px;
-}
-
-.header h1 {
-  font-size: 50px;
-  }
-
-.assignment {
-  font-size: 12px;
-  line-height: 24px;
-  font-family: 'helvetica', 'arial', 'sans';
-  padding: 20px 20px 20px 30px;
-  width: 250px;
-  height: 350px;
-  overflow: hidden;
-  float: left;
-}
-
-.assignment:hover { overflow:auto }
-
-.assignment a {
-    color: #000;
-    text-decoration: none;
-}
-
-.assignment a:hover {
-  background: #7F00FF;
-  color: #7F00FF;
-  text-decoration: none;
-}
-
-.footer {
-    width: 1100px;
-    float: left;
-    padding: 300px 0px 30px 30px;
-}
-
-.widebody {
-    width: 800px;
-    padding: 0px 30px 30px 30px;
-}
-
-.widebody a {
-}
-
-.widebody a:hover {
-  background: #F06;
-  color: #FFF;
-  text-decoration: none;
-}
-
