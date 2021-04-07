@@ -1,6 +1,6 @@
 body {
             margin: 0;
-            font-family: "Arboria";
+            font-family: Arboria, sans-serif;
         }
 
         .sidebar {
@@ -34,11 +34,12 @@ body {
             margin-left: 40px;
             font-size: 35px;
             color: black;
-            font: "Arboria";
+            font-family: Arboria, sans-serif;
         }
 
         .sidebar c {
             display: block;
+            font-family: Arboria, sans-serif;;
             font-size: 17px;
             margin-left: 40px;
             margin-top: 10px;
@@ -52,7 +53,7 @@ body {
 
         .assignment {
             font-size: 16px;
-            font-family: 'Arboria';
+            font-family: Arboria, sans-serif;
             padding: 0px 20px 0px 20px;
             width: 490px;
             height: 450px;
