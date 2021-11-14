@@ -47,6 +47,16 @@ body {
             font-style: italic;
         }
 
+        .sidebar d {
+            display: block;
+            font-size: 18px;
+            font-family: Arboria, sans-serif;
+            margin-left: 40px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-style: normal;
+        }
+
         .sidebar a:hover:not(.active) {
             color: #adb5bd;
         }
